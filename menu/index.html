@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Saigoner Bistro</title>
+
+    <link rel="icon" href="../images/brand/favicon-32.jpg" sizes="32x32">
+    <link rel="icon" href="../images/brand/favicon-192.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" href="../images/brand/favicon-192.jpg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../css/saigoner.css" rel="stylesheet">
+    </head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg sb-navbar" aria-label="Hovednavigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center py-0" href="../index.html" aria-label="Saigoner Bistro">
+                <img src="../images/brand/logo-header.png" alt="Saigoner Bistro" class="sb-brand-logo">
+            </a>
+
+            <div class="d-flex align-items-center gap-2 order-lg-3">
+                <a href="https://www.instagram.com/@saigonerbistro" target="_blank" rel="noopener noreferrer"
+                   class="sb-social-btn d-none d-sm-inline-flex" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61554125473344" target="_blank" rel="noopener noreferrer"
+                   class="sb-social-btn d-none d-sm-inline-flex" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://live.tebi.co/ecom/reservations/662376_9d857a9c17abefe701308232e953c8c048909cb44379c7cc7f8ed5cdf0fb355d"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-sb-coral btn-sm px-3 py-2 d-none d-md-inline-flex align-items-center gap-1">
+                    <i class="bi bi-calendar2-check"></i> Book bord
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none ms-1" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#sbMobileNav"
+                        aria-controls="sbMobileNav" aria-label="Åbn menu">
+                    <i class="bi bi-list fs-2" style="color: var(--sb-secondary);"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center order-lg-2" id="sbDesktopNav">
+                <ul class="navbar-nav gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link sb-nav-link " href="../index.html">Forside</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sb-nav-link active" href="../menu/index.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sb-nav-link " href="../take-away/index.html">Take Away</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sb-nav-link " href="../kontakt/index.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Drawer -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sbMobileNav" aria-labelledby="sbMobileNavLabel"
+         style="background-color: var(--sb-bg); color: var(--sb-secondary);">
+        <div class="offcanvas-header border-bottom" style="border-color: var(--sb-border) !important;">
+            <div class="d-flex align-items-center" id="sbMobileNavLabel">
+                <img src="../images/brand/logo-header.png" alt="Saigoner Bistro" style="height: 42px;">
+            </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Luk menu"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between py-4">
+            <ul class="navbar-nav gap-2 fs-5">
+                <li class="nav-item">
+                    <a class="nav-link sb-nav-link " href="../index.html">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sb-nav-link active" href="../menu/index.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sb-nav-link " href="../take-away/index.html">Take Away</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sb-nav-link " href="../kontakt/index.html">Kontakt</a>
+                </li>
+            </ul>
+
+            <div class="pt-4 border-top" style="border-color: var(--sb-border) !important;">
+                <a href="https://live.tebi.co/ecom/reservations/662376_9d857a9c17abefe701308232e953c8c048909cb44379c7cc7f8ed5cdf0fb355d"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-sb-coral w-100 mb-3">
+                    <i class="bi bi-calendar2-check me-1"></i> Book bord
+                </a>
+                <div class="small text-muted mb-2" style="color: var(--sb-ink-muted) !important;">
+                    <i class="bi bi-geo-alt text-danger me-1"></i> Øster Farimagsgade 12, 2100 København Ø<br>
+                    <i class="bi bi-telephone text-danger me-1"></i> +45 4114 2100
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                    <a href="https://www.instagram.com/@saigonerbistro" target="_blank" rel="noopener noreferrer" class="sb-social-btn" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61554125473344" target="_blank" rel="noopener noreferrer" class="sb-social-btn" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="flex-grow-1">
+            <!-- Cover Hero -->
+    <section class="sb-page-hero">
+        <img src="../images/gallery/bistro-cover.jpg" alt="Saigoner Bistro Menu" class="sb-page-hero-bg">
+        <div class="sb-page-hero-overlay"></div>
+        <div class="container sb-page-hero-content">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 reveal-up">
+                    <span class="sb-eyebrow mb-3" style="background-color: rgba(242,65,57,0.22); color: #ffdda6;">
+                        Tapas · Hovedretter · Cocktails
+                    </span>
+                    <h1 class="mb-3">Saigoner Bistro Menu</h1>
+                    <p class="lead mb-0" style="color: rgba(255, 235, 204, 0.88);">
+                        Udforsk vores lækre menukort hvor du kan sammensætte små retter fra Tapas collection og tilføje små hovedretter til dine 3, 5 eller 7 tapasretter.
+                    </p>
+                </div>
+                <div class="col-lg-5 text-lg-end reveal-up">
+                    <div class="d-inline-flex flex-wrap gap-3">
+                        <a href="https://book.easytablebooking.com/book/?id=5095f&lang=auto"
+                           target="_blank" rel="noopener noreferrer" class="btn btn-sb-coral btn-lg">
+                            <i class="bi bi-calendar2-check me-2"></i>Book Bord
+                        </a>
+                        <a href="../take-away/index.html" class="btn btn-sb-outline-light btn-lg">
+                            Bestil Take Away
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Cards Showcase -->
+    <section class="sb-section">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3 reveal-up">
+                <div>
+                    <span class="sb-eyebrow mb-2">Menukort</span>
+                    <h2 class="display-6 mb-1">Klik på siderne for at zoome ind</h2>
+                    <p class="mb-0 small" style="color: var(--sb-ink-muted);">Brug piletasterne i fuldskærmsvisningen for at bladre mellem siderne.</p>
+                </div>
+                <a href="https://book.easytablebooking.com/book/?id=5095f&lang=auto"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-sb-primary align-self-start align-self-md-auto">
+                    Book Bord nu
+                </a>
+            </div>
+
+            <div class="row g-4">
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-1.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 1 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 1 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-1.png"
+                                 alt="Saigoner Bistro Menukort side 1" loading="lazy">
+                        </div>
+                    </div>
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-2.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 2 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 2 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-2.png"
+                                 alt="Saigoner Bistro Menukort side 2" loading="lazy">
+                        </div>
+                    </div>
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-3.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 3 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 3 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-3.png"
+                                 alt="Saigoner Bistro Menukort side 3" loading="lazy">
+                        </div>
+                    </div>
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-4.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 4 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 4 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-4.png"
+                                 alt="Saigoner Bistro Menukort side 4" loading="lazy">
+                        </div>
+                    </div>
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-5.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 5 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 5 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-5.png"
+                                 alt="Saigoner Bistro Menukort side 5" loading="lazy">
+                        </div>
+                    </div>
+                                    <div class="col-md-6 reveal-up">
+                        <div class="sb-menu-sheet"
+                             data-lightbox-src="../images/menu/menu-page-6.png"
+                             data-lightbox-caption="Saigoner Bistro Menukort — Side 6 af 6">
+                            <span class="sb-menu-sheet-tag">
+                                <i class="bi bi-zoom-in me-1"></i> Side 6 / 6
+                            </span>
+                            <img src="../images/menu/menu-page-6.png"
+                                 alt="Saigoner Bistro Menukort side 6" loading="lazy">
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- Culinary Gallery -->
+    <section class="sb-section sb-section-alt border-top" style="border-color: var(--sb-border) !important;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 reveal-up" style="max-width: 640px;">
+                <span class="sb-eyebrow mb-2">Fra køkkenet</span>
+                <h2 class="display-6 mb-2">Et indblik i vores retter &amp; stemning</h2>
+                <p class="mb-0" style="color: var(--sb-ink-muted);">Friske krydderurter, håndrullede klassikere og signaturcocktails skabt til at deles.</p>
+            </div>
+
+            
+            <div class="row g-4">
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/dish-09.jpg"
+                             data-lightbox-caption="Vietnamesiske tapasretter">
+                            <img src="../images/gallery/dish-09.jpg" alt="Vietnamesiske tapasretter" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Vietnamesiske tapasretter</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/dish-10.jpg"
+                             data-lightbox-caption="Aftenstemning ved bordet">
+                            <img src="../images/gallery/dish-10.jpg" alt="Aftenstemning ved bordet" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Aftenstemning ved bordet</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/dish-11.jpg"
+                             data-lightbox-caption="Deling af små retter">
+                            <img src="../images/gallery/dish-11.jpg" alt="Deling af små retter" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Deling af små retter</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/bistro-wide.jpg"
+                             data-lightbox-caption="Indretning &amp; bistroatmosfære">
+                            <img src="../images/gallery/bistro-wide.jpg" alt="Indretning &amp; bistroatmosfære" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Indretning &amp; bistroatmosfære</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/dish-12.jpg"
+                             data-lightbox-caption="Autentisk smag fra Saigon">
+                            <img src="../images/gallery/dish-12.jpg" alt="Autentisk smag fra Saigon" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Autentisk smag fra Saigon</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 reveal-up">
+                        <div class="sb-photo-tile" style="aspect-ratio: 4/4;"
+                             data-lightbox-src="../images/gallery/dish-13.jpg"
+                             data-lightbox-caption="Cocktails og gastronomi">
+                            <img src="../images/gallery/dish-13.jpg" alt="Cocktails og gastronomi" loading="lazy">
+                            <div class="sb-photo-tile-overlay">
+                                <span class="small fw-medium">Cocktails og gastronomi</span>
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="sb-footer pt-5 pb-4 mt-auto">
+    <div class="container">
+        <div class="row g-4 align-items-start pb-4">
+            <div class="col-lg-4 text-center text-lg-start">
+                <div class="d-inline-flex flex-column align-items-center align-items-lg-start">
+                    <img src="../images/brand/logo-footer.png" alt="Saigoner Bistro Logo" class="mb-3"
+                        style="height: 84px; width: auto; filter: brightness(1.06);">
+                    <p class="small mb-0" style="max-width: 300px; color: rgba(255, 235, 204, 0.78);">
+                        Autentiske vietnamesiske tapasretter, hovedretter og signaturcocktails ved Kartoffelrækkerne i
+                        København Ø.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6 class="text-uppercase small fw-bold mb-3" style="color: var(--sb-primary); letter-spacing: 0.08em;">
+                    Sider</h6>
+                <ul class="list-unstyled d-grid gap-2 small mb-0">
+                    <li><a href="../index.html">Forside</a></li>
+                    <li><a href="../menu/index.html">Menukort</a></li>
+                    <li><a href="../take-away/index.html">Take Away</a></li>
+                    <li><a href="../kontakt/index.html">Kontakt &amp; Åbningstider</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <h6 class="text-uppercase small fw-bold mb-3" style="color: var(--sb-primary); letter-spacing: 0.08em;">
+                    Find os</h6>
+                <ul class="list-unstyled d-grid gap-2 small mb-0">
+                    <li><i class="bi bi-geo-alt me-2 text-danger"></i>Øster Farimagsgade 12, 2100 København Ø</li>
+                    <li><i class="bi bi-telephone me-2 text-danger"></i><a href="tel:+4541142100">+45 4114 2100</a></li>
+                    <li><i class="bi bi-envelope me-2 text-danger"></i><a
+                            href="mailto:contact@saigonerbistro.dk">contact@saigonerbistro.dk</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h6 class="text-uppercase small fw-bold mb-3" style="color: var(--sb-primary); letter-spacing: 0.08em;">
+                    Åbningstider</h6>
+                <div class="small d-grid gap-1" style="color: rgba(255, 235, 204, 0.8);">
+                    <div class="d-flex justify-content-between"><span>Mandag</span><span>Lukket</span></div>
+                    <div class="d-flex justify-content-between"><span>Tir – Tor</span><span>17:00 – 21:30</span></div>
+                    <div class="d-flex justify-content-between"><span>Fre – Lør</span><span>17:00 – 23:00</span></div>
+                    <div class="d-flex justify-content-between"><span>Søndag</span><span>12:00 – 15:30</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-3 border-top"
+            style="border-color: rgba(255, 235, 204, 0.16) !important;">
+            <p class="small mb-2 mb-sm-0" style="color: rgba(255, 235, 204, 0.68);">
+                &copy; 2026 Saigoner Bistro
+            </p>
+            <div class="d-flex align-items-center gap-3">
+                <a href="https://www.instagram.com/@saigonerbistro" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram" class="fs-5">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61554125473344" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook" class="fs-5">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="modal fade" id="sbLightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body p-0 position-relative text-center">
+                <button type="button"
+                        class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 z-3"
+                        data-bs-dismiss="modal" aria-label="Luk"
+                        style="width: 42px; height: 42px; background-color: rgba(58,49,46,0.9); border-color: rgba(255,235,204,0.3);">
+                    <i class="bi bi-x-lg text-white"></i>
+                </button>
+
+                <button type="button" id="sbLightboxPrev"
+                        class="btn btn-dark rounded-circle position-absolute top-50 start-0 translate-middle-y ms-2 ms-md-3 z-3"
+                        aria-label="Forrige"
+                        style="width: 44px; height: 44px; background-color: rgba(58,49,46,0.85); border-color: rgba(255,235,204,0.3);">
+                    <i class="bi bi-chevron-left text-white"></i>
+                </button>
+
+                <img id="sbLightboxImage" src="" alt="Saigoner Bistro"
+                     class="img-fluid rounded-4 shadow-lg"
+                     style="max-height: 85vh; object-fit: contain; background: var(--sb-secondary);">
+
+                <button type="button" id="sbLightboxNext"
+                        class="btn btn-dark rounded-circle position-absolute top-50 end-0 translate-middle-y me-2 me-md-3 z-3"
+                        aria-label="Næste"
+                        style="width: 44px; height: 44px; background-color: rgba(58,49,46,0.85); border-color: rgba(255,235,204,0.3);">
+                    <i class="bi bi-chevron-right text-white"></i>
+                </button>
+
+                <p id="sbLightboxCaption" class="small mt-2 mb-0 text-light"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/saigoner.js"></script>
+    </body>
+</html>
+
